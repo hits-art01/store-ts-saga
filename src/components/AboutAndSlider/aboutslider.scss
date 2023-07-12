@@ -1,0 +1,46 @@
+.about-and-slider__content {
+  margin-top: 70px;
+  display: flex;
+  .about {
+    flex: 0 1 50%;
+    .about__box {
+      padding: 50px 40px 30px 40px;
+      background: #88b4ff;
+      border-radius: 10px;
+      .about__content {
+        .about__text {
+          margin-bottom: 40px;
+          .about__caption {
+            font-weight: 600;
+            font-size: 16px;
+            color: #333333;
+            margin-bottom: 10px;
+            letter-spacing: 3px;
+            margin-left: 3px;
+          }
+          .about__title {
+            font-size: 52px;
+            font-weight: 700;
+            color: #21375d;
+            margin-bottom: 20px;
+            line-height: 130%;
+          }
+          .about__subtitle {
+            margin-left: 3px;
+            color: #333333;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+          }
+        }
+        .about__btn {
+          color: #fff;
+          font-weight: 700;
+          font-size: 16px;
+          background: #21375d;
+          padding: 25px 60px;
+        }
+      }
+    }
+  }
+}
