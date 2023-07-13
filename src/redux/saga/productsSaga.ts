@@ -9,6 +9,6 @@ function* productsWorker(): any {
   yield put(getProducts(response));
 }
 
-export function* productsWatcher(): any {
+export function* productsWatcher() {
   yield takeEvery(ActionTypes.GET_PRODUCTS_WATCHER, productsWorker);
 }

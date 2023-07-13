@@ -1,4 +1,4 @@
-import { ActionTypes } from "../types";
+import { ActionTypes, ProductType } from "../types";
 
 const initialState = {
   products: [],
@@ -6,7 +6,7 @@ const initialState = {
 
 export interface FetchProductsAction {
   type: ActionTypes.GET_PRODUCTS;
-  payload: any[];
+  payload: ProductType[];
 }
 
 export const productsReducer = (

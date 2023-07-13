@@ -33,9 +33,25 @@
     }
     .header__cart-btn {
       cursor: pointer;
+      position: relative;
       img {
         width: 28px;
       }
     }
   }
+}
+
+.items-quantity {
+  font-weight: 700;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #21375d;
+  color: #fff;
+  position: absolute;
+  top: 17px;
+  left: -8px;
 }

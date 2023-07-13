@@ -11,7 +11,7 @@ const OurProducts: FC = () => {
   useEffect(() => {
     dispatch(getProductsWatch());
   }, []);
-  const products = useTypesSelector((state) => state.products);
+  const products = useTypesSelector((state) => state.products.products);
   return (
     <div className="our-products">
       <div className="our-products__container _container">
@@ -20,7 +20,7 @@ const OurProducts: FC = () => {
             <div className="our-products__title">Our Products</div>
           </div>
           <div className="our-products__items item">
-            {products.map((product: any) => (
+            {products.slice(0, 8).map((product: any) => (
               <ProductItem key={product.title} product={product} />
             ))}
           </div>

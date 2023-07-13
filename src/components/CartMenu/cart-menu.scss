@@ -1,0 +1,108 @@
+.cart-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.46);
+  z-index: 10;
+  overflow-x: hidden;
+  &__container {
+    background: #ffffff;
+    padding: 30px 40px 30px 30px;
+    float: right;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+    padding-bottom: 10px;
+    border-bottom: solid 2px #d9d9d9;
+  }
+  &__header-title {
+    color: #000;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  &__close-btn {
+    width: 16.625px;
+    height: 19px;
+    cursor: pointer;
+  }
+  &__goods {
+    margin-top: 20px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__footer-title {
+    color: #000;
+    font-family: "Poppins";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  &__price {
+    color: #21375d;
+    font-family: "Poppins";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  &__open-btn {
+    border-radius: 50px;
+    padding: 6px 30px;
+    border: 1px solid #000;
+    color: #000;
+    background: #ffffff;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  &__product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  &__image {
+    img {
+      border-radius: 10px;
+      width: 105px;
+      height: 105px;
+      object-fit: cover;
+    }
+  }
+  &__title {
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  &__delete-btn {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+}
