@@ -2,14 +2,9 @@ import React, { FC, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import "./aboutslider.scss";
 import { getProductsWatch } from "../../redux/actions";
+import Cover from "../../imgs/Cover2.jpg";
 
 const AboutAndSlider: FC = () => {
-  //   useEffect(() => {
-  //     fetch("https://dummyjson.com/products")
-  //       .then((res) => res.json())
-  //       .then(console.log);
-  //   }, []);
-
   return (
     <div className="about-and-slider">
       <div className="about-and-slider__container _container">
@@ -31,8 +26,10 @@ const AboutAndSlider: FC = () => {
               </div>
             </div>
           </div>
-          <div className="slider"></div>
         </div>
+      </div>
+      <div className="main-block__image _ibg">
+        <img src={Cover} alt="bg" />
       </div>
     </div>
   );

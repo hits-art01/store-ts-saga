@@ -1,0 +1,89 @@
+.product {
+  border-bottom: solid 1px #9f9f9f;
+}
+
+.product__container {
+  padding: 50px 0;
+  .product__content {
+    display: flex;
+    justify-content: space-around;
+    .product__img {
+      img {
+        height: 500px;
+        width: 420px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+    }
+    .product__info {
+      flex: 0 1 50%;
+      margin-bottom: 70px;
+      .product__main-info {
+        border-bottom: solid 1px #9f9f9f;
+
+        .product__title {
+          color: #000;
+          font-family: Poppins;
+          font-size: 42px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        .product__price {
+          color: #9f9f9f;
+          font-family: Poppins;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+
+          margin-bottom: 10px;
+        }
+        .product__description {
+          color: #000;
+          font-family: Poppins;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+
+          margin-bottom: 15px;
+        }
+        .product__btn {
+          border-radius: 15px;
+          padding: 6px 30px;
+          border: 1px solid #000;
+          color: #000;
+          background: #ffffff;
+          margin-bottom: 30px;
+
+          font-family: Poppins;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}
+
+.product__secondary-info {
+  margin-top: 30px;
+  .secondary-info__cont {
+    display: flex;
+    .secondary-info__column {
+      margin-right: 10px;
+      .secondary-info__text {
+        margin-bottom: 10px;
+
+        color: #9f9f9f;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+}

@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
+    padding: 25px 0;
     .header__logoname {
       font-size: 34px;
       font-weight: 700;
@@ -24,10 +24,15 @@
 
         justify-content: space-between;
         .menu__item {
-          font-size: 16px;
-          font-weight: 500;
-          font-family: "poppins";
           cursor: pointer;
+          position: relative;
+          .menu__link {
+            font-size: 16px;
+            font-weight: 500;
+            font-family: "poppins";
+            color: #000;
+            line-height: 150%;
+          }
         }
       }
     }
@@ -54,4 +59,22 @@
   position: absolute;
   top: 17px;
   left: -8px;
+}
+
+.menu__item::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #21375d;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.menu__item:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }

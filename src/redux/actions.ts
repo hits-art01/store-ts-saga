@@ -26,3 +26,12 @@ export const deleteItemFromCart = (payload: number) => ({
   type: ActionTypes.DELETE_FROM_CART,
   payload,
 });
+
+export const getComments = (payload: any) => ({
+  type: ActionTypes.GET_COMMENTS,
+  payload,
+});
+export const getCommentsWatch = (payload: any) => ({
+  type: ActionTypes.GET_COMMENTS_WATCHER,
+  payload,
+});

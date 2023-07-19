@@ -3,6 +3,7 @@ import "./header.scss";
 import CartIcon from "../../imgs/Vector.svg";
 import { useTypesSelector } from "../../hooks/useTypesSelector";
 import CartMenu from "../CartMenu/CartMenu";
+import { Link } from "react-router-dom";
 
 const Header: FC = () => {
   const items = useTypesSelector((state) => state.cart.items);
@@ -34,9 +35,21 @@ const Header: FC = () => {
             <div className="header__logoname">Store</div>
             <div className="header__menu menu">
               <ul className="menu__cont">
-                <li className="menu__item">Home</li>
-                <li className="menu__item">Shop</li>
-                <li className="menu__item">Contacts</li>
+                <li className="menu__item">
+                  <Link className="menu__link" to="/Home">
+                    Home
+                  </Link>
+                </li>
+                <li className="menu__item">
+                  <Link className="menu__link" to="/Shop">
+                    Shop
+                  </Link>
+                </li>
+                <li className="menu__item">
+                  <Link className="menu__link" to="/Contacts">
+                    Contacts
+                  </Link>
+                </li>
               </ul>
             </div>
             <div className="header__cart-btn" onClick={handleClick}>

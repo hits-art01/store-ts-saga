@@ -27,10 +27,12 @@ const CartMenu: FC<CartProps> = ({ isVisible, setIsVisible }) => {
       .reduce((acc: any, item: { price: any }) => (acc += item.price), 0)
       .toFixed(2);
 
-  function handleClick() {
+  function handleClick(e: { stopPropagation: () => void }) {
+    e.stopPropagation();
     setIsVisible(false);
     window.onscroll = function () {};
   }
+
   return (
     <div className="cart-menu">
       <div className="cart-menu__container">

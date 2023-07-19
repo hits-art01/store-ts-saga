@@ -17,5 +17,23 @@
       justify-content: space-around;
       padding: -15px;
     }
+    .our-products__all {
+      margin: 30px 0;
+      display: flex;
+      justify-content: center;
+      .our-products__btn {
+        border: 1px solid #21375d;
+        background: #fff;
+        padding: 12px 80px;
+        .our-products__btn-link {
+          color: #21375d;
+          font-family: Poppins;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 150%; /* 24px */
+        }
+      }
+    }
   }
 }

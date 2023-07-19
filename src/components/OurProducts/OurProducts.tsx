@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 import { ActionTypes } from "../../redux/types";
 import { getProductsWatch } from "../../redux/actions";
 import { useTypesSelector } from "../../hooks/useTypesSelector";
+import { Link } from "react-router-dom";
 
 const OurProducts: FC = () => {
   const dispatch = useDispatch();
@@ -23,6 +24,13 @@ const OurProducts: FC = () => {
             {products.slice(0, 8).map((product: any) => (
               <ProductItem key={product.title} product={product} />
             ))}
+          </div>
+          <div className="our-products__all">
+            <div className="our-products__btn">
+              <Link to={"/Shop"} className="our-products__btn-link">
+                Show All
+              </Link>
+            </div>
           </div>
         </div>
       </div>

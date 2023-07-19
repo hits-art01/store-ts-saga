@@ -10,7 +10,7 @@ export interface RouteType {
 export type RoutesType = RouteType[];
 
 export const routes: RoutesType = [
-  { path: "/", element: <Main /> },
+  { path: "/Home", element: <Main /> },
   { path: "/product/:title", element: <ProductPage /> },
   { path: "/shop", element: <Shop /> },
 ];

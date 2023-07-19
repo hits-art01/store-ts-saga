@@ -6,6 +6,8 @@ export enum ActionTypes {
   ADD_TO_CART = "ADD_TO_CART",
   DELETE_FROM_CART = "DELETE_FROM_CART",
   CHANGE_VISIBLE_CART = "CHANGE_VISIBLE_CART",
+  GET_COMMENTS = "GET_COMMENTS",
+  GET_COMMENTS_WATCHER = "GET_COMMENTS_WATCHER",
 }
 
 export interface ProductType {
@@ -14,4 +16,7 @@ export interface ProductType {
   category: string;
   thumbnail: string;
   id: number;
+  brand: string;
+  rating: number;
+  images: string[];
 }

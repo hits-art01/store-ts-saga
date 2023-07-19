@@ -1,0 +1,39 @@
+.link-bar {
+  background: #88b4ff;
+  &__container {
+  }
+  &__content {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+
+    color: #000;
+    font-family: "Poppins";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  &__menu {
+    display: flex;
+    font-size: 30px;
+    font-weight: 500;
+    border-right: solid 2px #505050;
+    margin-right: 15px;
+  }
+  &__cont {
+    margin: 0 15px 0 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    .router-link {
+      color: #505050;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-right: 15px;
+    }
+  }
+}

@@ -24,7 +24,7 @@ const ProductItem: FC<ProductProps> = ({ product }) => {
   const isIteminCart = items.some((item) => item.id === product.id);
 
   function pageClick() {
-    navigate(`product/${product.title}`);
+    navigate(`/product/${product.title}`);
     dispatch(getCurrentWatch(product));
   }
   function addToCartClick(e: { stopPropagation: () => void }) {

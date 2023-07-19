@@ -90,3 +90,7 @@ body {
 
   box-sizing: content-box;
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}
