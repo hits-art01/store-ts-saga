@@ -1,0 +1,97 @@
+.products-shop {
+}
+
+.products-shop__filter-bar {
+  background: #88b4ff;
+  .filter-bar__container {
+    .filter-bar__content {
+      padding: 30px 0;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      .filter-bar__limit {
+        display: flex;
+        align-items: center;
+        .filter-bar__input {
+          text-align: center;
+          width: 55px;
+          height: 55px;
+          background: #fff;
+          // padding: 5px 10px;
+          // border: solid 2px #21375d;
+          // border-radius: 5px;
+
+          color: #9f9f9f;
+          font-family: Poppins;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        .filter-bar__show {
+          font-family: Poppins;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin-right: 10px;
+        }
+      }
+    }
+    .filter-bar__search-input {
+      background: #fff;
+      padding: 5px 10px;
+      // border: solid 2px #21375d;
+      // border-radius: 5px;
+
+      color: #9f9f9f;
+      font-family: Poppins;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
+
+.all-products {
+  margin-top: 40px;
+  .all-products__container {
+    .all-products__content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: start;
+      padding: -15px;
+      @media (max-width: 1317px) {
+        justify-content: space-around;
+      }
+    }
+  }
+}
+
+.all-products__pages-btns {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  .page-btn {
+    padding: 10px 20px;
+    border: solid 1px #21375d;
+    color: #21375d;
+    font-weight: 600;
+    font-size: 16px;
+  }
+}
+
+.page-btn:not(:last-child) {
+  margin-right: 10px;
+}
+
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}

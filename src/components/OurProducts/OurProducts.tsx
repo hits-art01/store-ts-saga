@@ -13,6 +13,7 @@ const OurProducts: FC = () => {
     dispatch(getProductsWatch());
   }, []);
   const products = useTypesSelector((state) => state.products.products);
+
   return (
     <div className="our-products">
       <div className="our-products__container _container">

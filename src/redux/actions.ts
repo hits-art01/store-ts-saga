@@ -1,4 +1,5 @@
 import { ProductProps } from "../components/ProductItem/ProductItem";
+
 import { ActionTypes } from "./types";
 import { ProductType } from "./types";
 
@@ -6,6 +7,7 @@ export const getProducts = (payload: ProductProps) => ({
   type: ActionTypes.GET_PRODUCTS,
   payload,
 });
+
 export const getProductsWatch = () => ({
   type: ActionTypes.GET_PRODUCTS_WATCHER,
 });
