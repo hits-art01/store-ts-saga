@@ -9,6 +9,7 @@
   flex: 0 1 25%;
   padding: 15px;
   position: relative;
+
   .product-item__content {
     // border: solid 1px #3a3a3a;
     background: #f4f5f7;
@@ -99,6 +100,9 @@
 .cart-hover {
   cursor: pointer;
   opacity: 0;
+  @media (max-width: 790px) {
+    display: none;
+  }
 }
 
 .cart-hover:hover {

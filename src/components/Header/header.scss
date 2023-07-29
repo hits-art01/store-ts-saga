@@ -15,10 +15,18 @@
       font-weight: 700;
       font-family: "poppins";
       cursor: pointer;
+      @media (max-width: 690px) {
+        font-size: 24px;
+      }
     }
     .header__menu {
       width: 430px;
-
+      @media (max-width: 680px) {
+        width: 350px;
+      }
+      @media (max-width: 600px) {
+        display: none;
+      }
       .menu__cont {
         display: flex;
 
@@ -36,16 +44,31 @@
         }
       }
     }
-    .header__cart-btn {
-      cursor: pointer;
-      position: relative;
-      img {
-        width: 28px;
+    .header__icon-btns {
+      display: flex;
+      align-items: center;
+      .header__cart-btn {
+        cursor: pointer;
+        position: relative;
+        img {
+          width: 28px;
+        }
+      }
+      .header__burger {
+        margin-right: 15px;
+        @media (min-width: 600px) {
+          display: none;
+        }
+        @media (max-width: 600px) {
+          display: block;
+        }
+        img {
+          width: 28px;
+        }
       }
     }
   }
 }
-
 .items-quantity {
   font-weight: 700;
   border-radius: 50%;

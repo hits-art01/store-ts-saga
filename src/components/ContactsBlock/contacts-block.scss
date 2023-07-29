@@ -1,11 +1,15 @@
 .contacts-block__container {
   .contacts-block__content {
     margin-top: 100px;
+    @media (max-width: 740px) {
+      margin-top: 50px;
+    }
     .contacts-block__text {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin-bottom: 80px;
+
       .contacts-block__title {
         color: #000;
         font-family: Poppins;
@@ -13,6 +17,12 @@
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+        @media (max-width: 640px) {
+          font-size: 24px;
+        }
+        @media (max-width: 460px) {
+          font-size: 18px;
+        }
       }
       .contacts-block__subtitle {
         color: #9f9f9f;
@@ -22,12 +32,22 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        @media (max-width: 640px) {
+          font-size: 14px;
+        }
+        @media (max-width: 460px) {
+          font-size: 12px;
+        }
       }
     }
     .contacts-block__main-info {
       display: flex;
       justify-content: center;
       margin-bottom: 50px;
+      @media (max-width: 900px) {
+        flex-direction: column;
+        align-items: center;
+      }
       .contacts-block__info {
         flex: 0 1 40%;
         .contacts-block__info-card {
@@ -46,6 +66,9 @@
               font-size: 24px;
               font-style: normal;
               font-weight: 500;
+              @media (max-width: 460px) {
+                font-size: 20px;
+              }
             }
             .contacts-block__info-subtitle {
               font-family: Poppins;
@@ -53,6 +76,9 @@
               font-style: normal;
               font-weight: 400;
               line-height: 150%;
+              @media (max-width: 460px) {
+                font-size: 14px;
+              }
             }
           }
         }
@@ -60,7 +86,25 @@
       .contacts-block__personal-info {
         flex: 0 1 60%;
         padding: 0 55px;
+        @media (max-width: 460px) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        @media (max-width: 460px) {
+          padding: 0px;
+        }
         .personal-info__input-section {
+          @media (max-width: 640px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
+          @media (max-width: 460px) {
+            padding: 0 20px;
+          }
+
           .personal-info__title {
             margin-bottom: 20px;
 
@@ -83,6 +127,15 @@
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+            @media (max-width: 640px) {
+              width: 400px;
+            }
+            @media (max-width: 520px) {
+              width: 350px;
+            }
+            @media (max-width: 460px) {
+              width: 300px;
+            }
           }
           .personal-info__textarea {
             width: 530px;
@@ -96,6 +149,15 @@
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+            @media (max-width: 640px) {
+              width: 400px;
+            }
+            @media (max-width: 520px) {
+              width: 350px;
+            }
+            @media (max-width: 460px) {
+              width: 300px;
+            }
           }
         }
         .personal-info__submit {
@@ -109,6 +171,10 @@
           font-style: normal;
           font-weight: 400;
           line-height: normal;
+          @media (max-width: 460px) {
+            padding: 10px 60px;
+            font-size: 14px;
+          }
         }
       }
     }

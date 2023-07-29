@@ -4,27 +4,29 @@ import CartIcon from "../../imgs/Vector.svg";
 import { useTypesSelector } from "../../hooks/useTypesSelector";
 import CartMenu from "../CartMenu/CartMenu";
 import { Link } from "react-router-dom";
+import BurgerIcon from "../../imgs/Burger.png";
+import ModalMenu from "../ModalMenu/ModalMenu";
 
 const Header: FC = () => {
   const items = useTypesSelector((state) => state.cart.items);
   const [isVisible, setIsVisible] = useState<boolean>(false);
+  const [isVisibleMenu, setIsVisibleMenu] = useState<boolean>(false);
   function disableScroll() {
-    // Get the current page scroll position in the vertical direction
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-    // Get the current page scroll position in the horizontal direction
 
     const scrollLeft =
       window.pageXOffset || document.documentElement.scrollLeft;
 
-    // if any scroll is attempted,
-    // set this to the previous value
     window.onscroll = function () {
       window.scrollTo(scrollLeft, scrollTop);
     };
   }
-  function handleClick() {
+  function handleClickCart() {
     setIsVisible(true);
+    disableScroll();
+  }
+  function handleClickMenu() {
+    setIsVisibleMenu(true);
     disableScroll();
   }
   return (
@@ -52,17 +54,28 @@ const Header: FC = () => {
                 </li>
               </ul>
             </div>
-            <div className="header__cart-btn" onClick={handleClick}>
-              <img src={CartIcon} alt="cart" />
-              {items.length > 0 ? (
-                <div className="items-quantity">{items.length}</div>
-              ) : null}
+            <div className="header__icon-btns">
+              <div className="header__burger" onClick={handleClickMenu}>
+                <img src={BurgerIcon} alt="" />
+              </div>
+              <div className="header__cart-btn" onClick={handleClickCart}>
+                <img src={CartIcon} alt="cart" />
+                {items.length > 0 ? (
+                  <div className="items-quantity">{items.length}</div>
+                ) : null}
+              </div>
             </div>
           </div>
         </div>
       </div>
       {isVisible ? (
         <CartMenu isVisible={isVisible} setIsVisible={setIsVisible} />
+      ) : null}
+      {isVisibleMenu ? (
+        <ModalMenu
+          isVisibleMenu={isVisibleMenu}
+          setIsVisibleMenu={setIsVisibleMenu}
+        />
       ) : null}
     </>
   );

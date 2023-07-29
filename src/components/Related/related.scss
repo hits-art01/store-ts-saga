@@ -11,6 +11,9 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+        @media (max-width: 600px) {
+          font-size: 24px;
+        }
       }
       .related__slider {
         margin-left: -20px;
@@ -23,6 +26,18 @@
   //   min-width: 1256px;
   //   max-width: 1256px;
   width: 1256px;
+  @media (max-width: 1260px) {
+    width: 950px;
+  }
+  @media (max-width: 1000px) {
+    width: 620px;
+  }
+  @media (max-width: 670px) {
+    width: 350px;
+  }
+  @media (max-width: 490px) {
+    width: 300px;
+  }
 }
 
 .custom-dot-list-style {

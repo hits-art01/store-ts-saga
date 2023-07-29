@@ -1,18 +1,14 @@
-import React, {
-  FC,
-  createContext,
-  SetStateAction,
-  useState,
-  Dispatch,
-} from "react";
+import React, { FC, SetStateAction, useEffect, Dispatch } from "react";
 import "./cart-menu.scss";
 import { useTypesSelector } from "../../hooks/useTypesSelector";
 import CartClose from "../../imgs/Group (6).png";
 import DeleteIcon from "../../imgs/DeleteBtn.png";
 import { useDispatch } from "react-redux";
 import { deleteItemFromCart } from "../../redux/actions";
-import ProductCover from "../ProductItem/ProductCover";
+
 import { useNavigate } from "react-router";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 interface CartProps {
   isVisible: boolean;
@@ -42,9 +38,12 @@ const CartMenu: FC<CartProps> = ({ isVisible, setIsVisible }) => {
     navigate(`/Cart`);
   }
 
+  useEffect(() => {
+    Aos.init({ duration: 500 });
+  }, []);
   return (
     <div className="cart-menu">
-      <div className="cart-menu__container">
+      <div data-aos="fade-left" className="cart-menu__container">
         <div className="cart-menu__content">
           <div className="cart-menu__header">
             <div className="cart-menu__header-title">Shopping Cart</div>

@@ -27,6 +27,11 @@
           font-style: normal;
           font-weight: 400;
           line-height: normal;
+          @media (max-width: 515px) {
+            height: 40px;
+            width: 40px;
+            font-size: 16px;
+          }
         }
         .filter-bar__show {
           font-family: Poppins;
@@ -35,6 +40,9 @@
           font-weight: 400;
           line-height: normal;
           margin-right: 10px;
+          @media (max-width: 515px) {
+            font-size: 16px;
+          }
         }
       }
     }
@@ -50,6 +58,10 @@
       font-style: normal;
       font-weight: 400;
       line-height: normal;
+      @media (max-width: 515px) {
+        max-width: 200px;
+        font-size: 16px;
+      }
     }
   }
 }

@@ -10,6 +10,9 @@
     border-bottom: solid 1px #9f9f9f;
     margin-bottom: 20px;
     padding: 20px 0;
+    @media (max-width: 600px) {
+      flex-wrap: wrap;
+    }
   }
   &__store {
     .footer__store-title {
