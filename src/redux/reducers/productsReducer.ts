@@ -1,5 +1,5 @@
 import { act } from "react-dom/test-utils";
-import { ActionTypes, LimitSkipTypes, ProductType } from "../types";
+import { ActionTypes, ProductType } from "../types";
 
 interface InitialTypeProducts {
   products: ProductType[];

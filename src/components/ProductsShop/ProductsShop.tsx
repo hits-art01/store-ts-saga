@@ -5,7 +5,6 @@ import "./products-shop.scss";
 import { useDispatch } from "react-redux";
 import { ProductType } from "../../redux/types";
 import { getProductsWatch } from "../../redux/actions";
-import { useSearchedProducts } from "../../hooks/useSearchedProducts";
 
 const ProductsShop: FC = () => {
   const products = useTypesSelector((state) => state.products.products);
@@ -14,17 +13,11 @@ const ProductsShop: FC = () => {
   const pages = useMemo(() => Math.ceil(products.length / limit), [limit]);
   const [page, setPage] = useState<number>(1);
   const [query, setQuery] = useState<string>("");
-  const searchedAndLimitedProducts = useSearchedProducts(
-    products,
-    query,
-    limit,
-    page
-  );
 
   function getPageProduct(sliceLimit: number) {
     const currentPage = products
-      .slice(0, sliceLimit * page)
-      .filter((product) => product.title.toLowerCase().includes(query));
+      .filter((product) => product.title.toLowerCase().includes(query))
+      .slice(0, sliceLimit * page);
 
     setLimitedProdcuts(currentPage);
   }

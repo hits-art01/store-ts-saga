@@ -12,6 +12,7 @@ import DeleteIcon from "../../imgs/DeleteBtn.png";
 import { useDispatch } from "react-redux";
 import { deleteItemFromCart } from "../../redux/actions";
 import ProductCover from "../ProductItem/ProductCover";
+import { useNavigate } from "react-router";
 
 interface CartProps {
   isVisible: boolean;
@@ -21,6 +22,7 @@ interface CartProps {
 const CartMenu: FC<CartProps> = ({ isVisible, setIsVisible }) => {
   const items = useTypesSelector((state) => state.cart.items);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const calcTotalPrice = (items: any[]) =>
     items
@@ -31,6 +33,13 @@ const CartMenu: FC<CartProps> = ({ isVisible, setIsVisible }) => {
     e.stopPropagation();
     setIsVisible(false);
     window.onscroll = function () {};
+  }
+
+  function openCartPage(e: { stopPropagation: () => void }) {
+    e.stopPropagation();
+    setIsVisible(false);
+    window.onscroll = function () {};
+    navigate(`/Cart`);
   }
 
   return (
@@ -67,7 +76,9 @@ const CartMenu: FC<CartProps> = ({ isVisible, setIsVisible }) => {
             <div className="cart-menu__total-price">
               {calcTotalPrice(items)}
             </div>
-            <button className="cart-menu__open-btn">Cart</button>
+            <button className="cart-menu__open-btn" onClick={openCartPage}>
+              Cart
+            </button>
           </div>
         </div>
       </div>

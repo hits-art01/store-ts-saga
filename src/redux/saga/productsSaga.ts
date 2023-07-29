@@ -1,6 +1,6 @@
 import { call, put, takeEvery } from "redux-saga/effects";
 import { getProducts } from "../actions";
-import { ActionTypes, LimitSkipTypes } from "../types";
+import { ActionTypes } from "../types";
 
 function* productsWorker(): any {
   const request = yield call(fetch, `https://dummyjson.com/products`);

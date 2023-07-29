@@ -1,0 +1,120 @@
+.contacts-block__container {
+  .contacts-block__content {
+    margin-top: 100px;
+    .contacts-block__text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 80px;
+      .contacts-block__title {
+        color: #000;
+        font-family: Poppins;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+      .contacts-block__subtitle {
+        color: #9f9f9f;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+    .contacts-block__main-info {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 50px;
+      .contacts-block__info {
+        flex: 0 1 40%;
+        .contacts-block__info-card {
+          display: flex;
+          padding: 0 40px;
+          .contacts-block__icon {
+            margin-right: 30px;
+          }
+          .contacts-block__info-cont {
+            margin-bottom: 40px;
+            .contacts-block__info-title {
+              margin-bottom: 10px;
+
+              color: #000;
+              font-family: Poppins;
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 500;
+            }
+            .contacts-block__info-subtitle {
+              font-family: Poppins;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 150%;
+            }
+          }
+        }
+      }
+      .contacts-block__personal-info {
+        flex: 0 1 60%;
+        padding: 0 55px;
+        .personal-info__input-section {
+          .personal-info__title {
+            margin-bottom: 20px;
+
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+          .personal-info__input {
+            width: 530px;
+
+            border-radius: 10px;
+            border: 1px solid #9f9f9f;
+            padding: 25px 30px;
+
+            color: #9f9f9f;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+          .personal-info__textarea {
+            width: 530px;
+            border-radius: 10px;
+            border: 1px solid #9f9f9f;
+            padding: 25px 30px;
+
+            color: #9f9f9f;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+        .personal-info__submit {
+          padding: 15px 90px;
+          background: #21375d;
+          border-radius: 5px;
+
+          color: #fff;
+          font-family: Poppins;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}
+
+.personal-info__input-section:not(:last-child) {
+  margin-bottom: 40px;
+}
