@@ -16,7 +16,9 @@ const ProductsShop: FC = () => {
 
   function getPageProduct(sliceLimit: number) {
     const currentPage = products
-      .filter((product) => product.title.toLowerCase().includes(query))
+      .filter((product) =>
+        product.title.toLowerCase().includes(query.toLocaleLowerCase())
+      )
       .slice(0, sliceLimit * page);
 
     setLimitedProdcuts(currentPage);
