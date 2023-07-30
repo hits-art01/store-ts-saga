@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/store-ts-saga/static/css/main.59d0de9e.css",
+    "main.js": "/store-ts-saga/static/js/main.b33491d5.js",
+    "static/media/Cover2.jpg": "/store-ts-saga/static/media/Cover2.90cec3d41c6f952d7e5c.jpg",
+    "static/media/revicons.eot": "/store-ts-saga/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/store-ts-saga/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/store-ts-saga/static/media/revicons.e8746a624ed098489406.woff",
+    "static/media/Vector.svg": "/store-ts-saga/static/media/Vector.95dc0ad8cfe73ae3cdb07c66898cf6af.svg",
+    "static/media/bi_clock-fill.svg": "/store-ts-saga/static/media/bi_clock-fill.0803ddeb4f1667172b5f734af9e01553.svg",
+    "static/media/Vector (1).svg": "/store-ts-saga/static/media/Vector (1).d46db41f9ebad40aa5e2ab7ffffa9a7e.svg",
+    "static/media/bxs_phone.svg": "/store-ts-saga/static/media/bxs_phone.ea489178a1c69ddc007c4cd140493718.svg",
+    "index.html": "/store-ts-saga/index.html",
+    "static/media/ant-design_delete-filled.svg": "/store-ts-saga/static/media/ant-design_delete-filled.5d03f50cb5f66d77df1c990f33fa197e.svg",
+    "main.59d0de9e.css.map": "/store-ts-saga/static/css/main.59d0de9e.css.map",
+    "main.b33491d5.js.map": "/store-ts-saga/static/js/main.b33491d5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.59d0de9e.css",
+    "static/js/main.b33491d5.js"
+  ]
+}
